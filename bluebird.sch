@@ -19,7 +19,7 @@ U 1 1 5E709109
 P 2000 4450
 F 0 "A1" H 2058 5075 50  0000 C CNN
 F 1 "BLUEFRUIT_SPI" H 2058 4984 50  0000 C CNN
-F 2 "" H 1350 4850 50  0001 C CNN
+F 2 "bluebird:BLUEFRUIT_SPI_FRIEND" H 1350 4850 50  0001 C CNN
 F 3 "" H 1350 4850 50  0001 C CNN
 	1    2000 4450
 	1    0    0    -1  
@@ -647,10 +647,8 @@ U 5E7AD77B
 F0 "key_matrix" 50
 F1 "key_matrix.sch" 50
 $EndSheet
-Text GLabel 9400 1400 2    50   Input ~ 0
-row_0
 Text GLabel 9400 1500 2    50   Input ~ 0
-row_1
+row1
 Wire Wire Line
 	9300 1400 9400 1400
 Wire Wire Line
@@ -671,22 +669,22 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 8150 3800 
 	1    0    0    -1  
 $EndComp
 Text GLabel 9400 1600 2    50   Input ~ 0
-row_2
+row2
 Text GLabel 9400 1700 2    50   Input ~ 0
-row_3
+row3
 Text GLabel 9400 1800 2    50   Input ~ 0
-row_4
+row4
 Text GLabel 9400 1900 2    50   Input ~ 0
-row_5
+row5
 Wire Wire Line
 	9300 1800 9400 1800
 Wire Wire Line
 	9300 1900 9400 1900
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR023
 U 1 1 5E7869DA
 P 7950 3700
-F 0 "#PWR?" H 7950 3550 50  0001 C CNN
+F 0 "#PWR023" H 7950 3550 50  0001 C CNN
 F 1 "VCC" V 7968 3827 50  0000 L CNN
 F 2 "" H 7950 3700 50  0001 C CNN
 F 3 "" H 7950 3700 50  0001 C CNN
@@ -696,10 +694,10 @@ $EndComp
 Wire Wire Line
 	7950 3700 7950 3800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR024
 U 1 1 5E78A789
 P 7950 6100
-F 0 "#PWR?" H 7950 5850 50  0001 C CNN
+F 0 "#PWR024" H 7950 5850 50  0001 C CNN
 F 1 "GND" V 7955 5972 50  0000 R CNN
 F 2 "" H 7950 6100 50  0001 C CNN
 F 3 "" H 7950 6100 50  0001 C CNN
@@ -723,10 +721,10 @@ Wire Wire Line
 Wire Wire Line
 	7150 2900 7050 2900
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5E79B3AE
 P 7150 3900
-F 0 "R?" V 7050 3900 50  0000 C CNN
+F 0 "R6" V 7050 3900 50  0000 C CNN
 F 1 "10k" V 7150 3900 50  0000 C CNN
 F 2 "" V 7080 3900 50  0001 C CNN
 F 3 "~" H 7150 3900 50  0001 C CNN
@@ -734,10 +732,10 @@ F 3 "~" H 7150 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5E79BB23
 P 7050 3900
-F 0 "R?" V 7150 3900 50  0000 C CNN
+F 0 "R5" V 7150 3900 50  0000 C CNN
 F 1 "10k" V 7050 3900 50  0000 C CNN
 F 2 "" V 6980 3900 50  0001 C CNN
 F 3 "~" H 7050 3900 50  0001 C CNN
@@ -757,10 +755,10 @@ Wire Wire Line
 Wire Wire Line
 	7150 4050 7150 4100
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR022
 U 1 1 5E7A9863
 P 7150 3650
-F 0 "#PWR?" H 7150 3500 50  0001 C CNN
+F 0 "#PWR022" H 7150 3500 50  0001 C CNN
 F 1 "VCC" V 7168 3777 50  0000 L CNN
 F 2 "" H 7150 3650 50  0001 C CNN
 F 3 "" H 7150 3650 50  0001 C CNN
@@ -775,21 +773,21 @@ Wire Wire Line
 	7150 3750 7150 3650
 Connection ~ 7150 3650
 Text GLabel 8750 5000 2    50   Input ~ 0
-col_0
+col0
 Text GLabel 8750 5100 2    50   Input ~ 0
-col_1
+col1
 Text GLabel 8750 5200 2    50   Input ~ 0
-col_2
+col2
 Text GLabel 8750 5300 2    50   Input ~ 0
-col_3
+col3
 Text GLabel 8750 5400 2    50   Input ~ 0
-col_4
+col4
 Text GLabel 8750 5500 2    50   Input ~ 0
-col_5
+col5
 Text GLabel 8750 5600 2    50   Input ~ 0
-col_6
+col6
 Text GLabel 8750 5700 2    50   Input ~ 0
-col_7
+col7
 Wire Wire Line
 	8650 5000 8750 5000
 Wire Wire Line
@@ -807,9 +805,9 @@ Wire Wire Line
 Wire Wire Line
 	8650 5700 8750 5700
 Text GLabel 8750 4100 2    50   Input ~ 0
-col_8
+col8
 Text GLabel 8750 4200 2    50   Input ~ 0
-col_9
+col9
 Wire Wire Line
 	8650 4100 8750 4100
 Wire Wire Line
@@ -827,17 +825,17 @@ Wire Wire Line
 Wire Wire Line
 	8650 4800 8750 4800
 Text GLabel 8750 4300 2    50   Input ~ 0
-col_10
+col10
 Text GLabel 8750 4400 2    50   Input ~ 0
-col_11
+col11
 Text GLabel 8750 4500 2    50   Input ~ 0
-col_12
+col12
 Text GLabel 8750 4600 2    50   Input ~ 0
-col_13
+col13
 Text GLabel 8750 4700 2    50   Input ~ 0
-col_14
+col14
 Text GLabel 8750 4800 2    50   Input ~ 0
-col_15
+col15
 Text GLabel 7050 2300 0    50   Input ~ 0
 ~MAIN_RST
 Wire Wire Line
@@ -856,10 +854,10 @@ Text GLabel 7150 5000 0    50   Input ~ 0
 Wire Wire Line
 	7250 5000 7150 5000
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR021
 U 1 1 5E817C35
 P 7050 5600
-F 0 "#PWR?" H 7050 5450 50  0001 C CNN
+F 0 "#PWR021" H 7050 5450 50  0001 C CNN
 F 1 "VCC" V 7068 5727 50  0000 L CNN
 F 2 "" H 7050 5600 50  0001 C CNN
 F 3 "" H 7050 5600 50  0001 C CNN
@@ -879,4 +877,211 @@ Wire Wire Line
 	7150 5600 7150 5700
 Wire Wire Line
 	7050 5600 7150 5600
+Text GLabel 9400 1400 2    50   Input ~ 0
+row0
+$Comp
+L Driver_LED:IS31FL3731-SA U3
+U 1 1 5E7362B6
+P 4800 4650
+F 0 "U3" H 4450 5700 50  0000 C CNN
+F 1 "IS31FL3731-SA" H 5100 3600 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 4800 4650 50  0001 C CNN
+F 3 "http://www.issi.com/WW/pdf/31FL3731.pdf" H 4800 4650 50  0001 C CNN
+	1    4800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5E736E70
+P 4800 3450
+F 0 "#PWR0101" H 4800 3300 50  0001 C CNN
+F 1 "VCC" V 4818 3577 50  0000 L CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3450 4800 3550
+$Comp
+L power:GND #PWR0102
+U 1 1 5E73D517
+P 4200 3950
+F 0 "#PWR0102" H 4200 3700 50  0001 C CNN
+F 1 "GND" V 4205 3822 50  0000 R CNN
+F 2 "" H 4200 3950 50  0001 C CNN
+F 3 "" H 4200 3950 50  0001 C CNN
+	1    4200 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3950 4200 3950
+Text GLabel 4200 3850 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 4200 3750 0    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	4300 3750 4200 3750
+Wire Wire Line
+	4300 3850 4200 3850
+Text GLabel 5400 3750 2    50   Input ~ 0
+LED_CA1
+Text GLabel 5400 3850 2    50   Input ~ 0
+LED_CA2
+Text GLabel 5400 3950 2    50   Input ~ 0
+LED_CA3
+Text GLabel 5400 4050 2    50   Input ~ 0
+LED_CA4
+Text GLabel 5400 4150 2    50   Input ~ 0
+LED_CA5
+Text GLabel 5400 4250 2    50   Input ~ 0
+LED_CA6
+Text GLabel 5400 4350 2    50   Input ~ 0
+LED_CA7
+Text GLabel 5400 4450 2    50   Input ~ 0
+LED_CA8
+Text GLabel 5400 4550 2    50   Input ~ 0
+LED_CA9
+Text GLabel 5400 4750 2    50   Input ~ 0
+LED_CB1
+Text GLabel 5400 4850 2    50   Input ~ 0
+LED_CB2
+Text GLabel 5400 4950 2    50   Input ~ 0
+LED_CB3
+Text GLabel 5400 5050 2    50   Input ~ 0
+LED_CB4
+Text GLabel 5400 5150 2    50   Input ~ 0
+LED_CB5
+Text GLabel 5400 5250 2    50   Input ~ 0
+LED_CB6
+Text GLabel 5400 5350 2    50   Input ~ 0
+LED_CB7
+Text GLabel 5400 5450 2    50   Input ~ 0
+LED_CB8
+Text GLabel 5400 5550 2    50   Input ~ 0
+LED_CB9
+Wire Wire Line
+	5300 5550 5400 5550
+Wire Wire Line
+	5300 5450 5400 5450
+Wire Wire Line
+	5300 5350 5400 5350
+Wire Wire Line
+	5300 5250 5400 5250
+Wire Wire Line
+	5300 5150 5400 5150
+Wire Wire Line
+	5300 5050 5400 5050
+Wire Wire Line
+	5300 4950 5400 4950
+Wire Wire Line
+	5300 4850 5400 4850
+Wire Wire Line
+	5300 4750 5400 4750
+Wire Wire Line
+	5300 4550 5400 4550
+Wire Wire Line
+	5300 4450 5400 4450
+Wire Wire Line
+	5300 4350 5400 4350
+Wire Wire Line
+	5300 4250 5400 4250
+Wire Wire Line
+	5300 4150 5400 4150
+Wire Wire Line
+	5300 4050 5400 4050
+Wire Wire Line
+	5300 3950 5400 3950
+Wire Wire Line
+	5300 3850 5400 3850
+Wire Wire Line
+	5300 3750 5400 3750
+Text GLabel 4200 4150 0    50   Input ~ 0
+LED_SHDN
+Wire Wire Line
+	4200 4150 4300 4150
+Text GLabel 4200 4250 0    50   Input ~ 0
+LED_INT
+Wire Wire Line
+	4300 4250 4200 4250
+$Comp
+L Device:C_Small C9
+U 1 1 5E7E5E50
+P 4000 4450
+F 0 "C9" V 4050 4500 50  0000 L CNN
+F 1 "0.22u" V 4050 4200 50  0000 L CNN
+F 2 "" H 4000 4450 50  0001 C CNN
+F 3 "~" H 4000 4450 50  0001 C CNN
+	1    4000 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 4450 4300 4450
+Text GLabel 3750 4450 0    50   Input ~ 0
+LED_AUD_IN
+Wire Wire Line
+	3900 4450 3750 4450
+$Comp
+L Device:C_Small C10
+U 1 1 5E8099B5
+P 4050 5000
+F 0 "C10" H 3900 5050 50  0000 L CNN
+F 1 "0.1u" H 3850 4950 50  0000 L CNN
+F 2 "" H 4050 5000 50  0001 C CNN
+F 3 "~" H 4050 5000 50  0001 C CNN
+	1    4050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E80A1A1
+P 4200 5000
+F 0 "R7" H 4300 5000 50  0000 C CNN
+F 1 "20k" V 4200 5000 50  0000 C CNN
+F 2 "" V 4130 5000 50  0001 C CNN
+F 3 "~" H 4200 5000 50  0001 C CNN
+	1    4200 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4750 4200 4750
+Wire Wire Line
+	4200 4750 4200 4850
+Wire Wire Line
+	4300 4550 4050 4550
+Wire Wire Line
+	4050 4550 4050 4900
+$Comp
+L power:GND #PWR0103
+U 1 1 5E8267E4
+P 4200 5300
+F 0 "#PWR0103" H 4200 5050 50  0001 C CNN
+F 1 "GND" V 4205 5172 50  0000 R CNN
+F 2 "" H 4200 5300 50  0001 C CNN
+F 3 "" H 4200 5300 50  0001 C CNN
+	1    4200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5150 4200 5200
+Wire Wire Line
+	4050 5100 4050 5200
+Wire Wire Line
+	4050 5200 4200 5200
+Connection ~ 4200 5200
+Wire Wire Line
+	4200 5200 4200 5300
+$Comp
+L power:GND #PWR0104
+U 1 1 5E839760
+P 4800 5850
+F 0 "#PWR0104" H 4800 5600 50  0001 C CNN
+F 1 "GND" V 4805 5722 50  0000 R CNN
+F 2 "" H 4800 5850 50  0001 C CNN
+F 3 "" H 4800 5850 50  0001 C CNN
+	1    4800 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5750 4800 5850
 $EndSCHEMATC
