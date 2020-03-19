@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name custom)(type Legacy)(uri ${KIPRJMOD}/custom.lib)(options "")(descr ""))
   (lib (name keyboard_parts)(type Legacy)(uri ${KIPRJMOD}/kicad_lib_tmk/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name SparkFun-IC-Power)(type Legacy)(uri ${KIPRJMOD}/SparkFun-KiCad-Libraries/Libraries/SparkFun-IC-Power.lib)(options "")(descr ""))
+  (lib (name EG2219)(type Legacy)(uri ${KIPRJMOD}/EG2219.lib)(options "")(descr ""))
 )
