@@ -1158,50 +1158,80 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0107
 U 1 1 6354D201
-P 2050 5350
-F 0 "#PWR0107" H 2050 5100 50  0001 C CNN
-F 1 "GND" V 2055 5222 50  0000 R CNN
-F 2 "" H 2050 5350 50  0001 C CNN
-F 3 "" H 2050 5350 50  0001 C CNN
-	1    2050 5350
+P 2050 5050
+F 0 "#PWR0107" H 2050 4800 50  0001 C CNN
+F 1 "GND" V 2055 4922 50  0000 R CNN
+F 2 "" H 2050 5050 50  0001 C CNN
+F 3 "" H 2050 5050 50  0001 C CNN
+	1    2050 5050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR0108
 U 1 1 6354DC23
-P 2050 5250
-F 0 "#PWR0108" H 2050 5100 50  0001 C CNN
-F 1 "VCC" V 2068 5377 50  0000 L CNN
-F 2 "" H 2050 5250 50  0001 C CNN
-F 3 "" H 2050 5250 50  0001 C CNN
-	1    2050 5250
+P 2050 4950
+F 0 "#PWR0108" H 2050 4800 50  0001 C CNN
+F 1 "VCC" V 2068 5077 50  0000 L CNN
+F 2 "" H 2050 4950 50  0001 C CNN
+F 3 "" H 2050 4950 50  0001 C CNN
+	1    2050 4950
 	0    1    1    0   
 $EndComp
-Text GLabel 2050 5050 2    50   Input ~ 0
+Text GLabel 2050 4750 2    50   Input ~ 0
 VUSB
-Text GLabel 2050 4950 2    50   Input ~ 0
+Text GLabel 2050 4650 2    50   Input ~ 0
 VBAT
-Text GLabel 2050 5150 2    50   Input ~ 0
+Text GLabel 2050 4850 2    50   Input ~ 0
 VCC_BAT
+Wire Wire Line
+	1850 4650 2050 4650
+Wire Wire Line
+	1850 4750 2050 4750
+Wire Wire Line
+	1850 4850 2050 4850
 Wire Wire Line
 	1850 4950 2050 4950
 Wire Wire Line
 	1850 5050 2050 5050
-Wire Wire Line
-	1850 5150 2050 5150
-Wire Wire Line
-	1850 5250 2050 5250
-Wire Wire Line
-	1850 5350 2050 5350
 $Comp
 L Connector_Generic:Conn_01x05 J3
 U 1 1 5E871C97
-P 1650 5150
-F 0 "J3" H 1568 4725 50  0000 C CNN
-F 1 "Conn_01x05" H 1568 4816 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1650 5150 50  0001 C CNN
-F 3 "~" H 1650 5150 50  0001 C CNN
-	1    1650 5150
+P 1650 4850
+F 0 "J3" H 1568 4425 50  0000 C CNN
+F 1 "Conn_01x05" H 1568 4516 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1650 4850 50  0001 C CNN
+F 3 "~" H 1650 4850 50  0001 C CNN
+	1    1650 4850
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5E9FC31F
+P 1650 5450
+F 0 "J4" H 1568 5225 50  0000 C CNN
+F 1 "Conn_01x01" H 1568 5316 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1650 5450 50  0001 C CNN
+F 3 "~" H 1650 5450 50  0001 C CNN
+	1    1650 5450
+	-1   0    0    1   
+$EndComp
+Text GLabel 2050 5450 2    50   Input ~ 0
+BLE_DFU
+Wire Wire Line
+	2050 5450 1850 5450
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5EA0F98E
+P 1650 5800
+F 0 "J5" H 1568 5575 50  0000 C CNN
+F 1 "Conn_01x01" H 1568 5666 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1650 5800 50  0001 C CNN
+F 3 "~" H 1650 5800 50  0001 C CNN
+	1    1650 5800
+	-1   0    0    1   
+$EndComp
+Text GLabel 2050 5800 2    50   Input ~ 0
+LED_AUD_IN
+Wire Wire Line
+	1850 5800 2050 5800
 $EndSCHEMATC
