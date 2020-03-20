@@ -452,7 +452,7 @@ U 1 1 633F8477
 P 4650 2650
 F 0 "JP1" H 4650 2763 50  0000 C CNN
 F 1 "SolderJumper_3_Bridged12" H 4650 2854 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4650 2650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm" H 4650 2650 50  0001 C CNN
 F 3 "~" H 4650 2650 50  0001 C CNN
 	1    4650 2650
 	1    0    0    1   
@@ -592,4 +592,8 @@ F 3 "" H 6300 2350 50  0001 C CNN
 	1    6300 2350
 	1    0    0    -1  
 $EndComp
+Text Notes 4250 3000 2    50   ~ 0
+500mA\ncharging
+Text Notes 5200 3050 0    50   ~ 0
+100mA\ncharging\n
 $EndSCHEMATC
