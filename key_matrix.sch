@@ -4704,4 +4704,65 @@ Wire Wire Line
 Wire Wire Line
 	11250 14550 11250 13550
 Connection ~ 11250 13550
+$Comp
+L Device:Rotary_Encoder_Switch SW2
+U 1 1 5E85CF73
+P 19550 1950
+F 0 "SW2" V 19596 1720 50  0000 R CNN
+F 1 "Rotary_Encoder_Switch" V 19505 1720 50  0000 R CNN
+F 2 "bluebird:482016514001" H 19400 2110 50  0001 C CNN
+F 3 "~" H 19550 2210 50  0001 C CNN
+	1    19550 1950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 19350 2350 3    50   Input ~ 0
+ENC_A
+Text GLabel 19750 2350 3    50   Input ~ 0
+ENC_B
+Wire Wire Line
+	19450 2250 19450 2350
+Wire Wire Line
+	19450 2350 19350 2350
+Wire Wire Line
+	19650 2250 19650 2350
+Wire Wire Line
+	19650 2350 19750 2350
+$Comp
+L power:GND #PWR0111
+U 1 1 5EB6B512
+P 19550 2350
+F 0 "#PWR0111" H 19550 2100 50  0001 C CNN
+F 1 "GND" H 19555 2177 50  0000 C CNN
+F 2 "" H 19550 2350 50  0001 C CNN
+F 3 "" H 19550 2350 50  0001 C CNN
+	1    19550 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19550 2250 19550 2350
+Text GLabel 19950 1650 2    50   Input ~ 0
+col13
+$Comp
+L Device:D D_ENC1
+U 1 1 5EC0A494
+P 19000 2000
+F 0 "D_ENC1" V 19046 1921 50  0000 R CNN
+F 1 "D" V 18945 1921 50  0000 R CNN
+F 2 "keyboard_parts:D_SOD123_axial" H 19000 2000 50  0001 C CNN
+F 3 "~" H 19000 2000 50  0001 C CNN
+	1    19000 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19450 1650 19000 1650
+Wire Wire Line
+	19000 1650 19000 1850
+Wire Wire Line
+	19650 1650 19950 1650
+Text GLabel 19000 2250 0    50   Input ~ 0
+row1
+Wire Wire Line
+	19000 2150 19000 2250
+Text Notes 14800 3000 0    50   ~ 0
+Reserved \nfor\nencoder
 $EndSCHEMATC
