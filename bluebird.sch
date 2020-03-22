@@ -1095,8 +1095,6 @@ NoConn ~ 7150 2200
 NoConn ~ 7150 3000
 NoConn ~ 7150 3100
 NoConn ~ 7150 3200
-NoConn ~ 9300 2900
-NoConn ~ 9300 2800
 NoConn ~ 9300 1300
 NoConn ~ 7250 4700
 NoConn ~ 7250 4800
@@ -1424,4 +1422,12 @@ Text GLabel 3100 3850 2    50   Input ~ 0
 VUSB
 Wire Wire Line
 	3000 4150 3100 4150
+Text GLabel 9400 2800 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	9300 2800 9400 2800
+Text GLabel 9400 2900 2    50   Input ~ 0
+VCC_BAT
+Wire Wire Line
+	9300 2900 9400 2900
 $EndSCHEMATC
