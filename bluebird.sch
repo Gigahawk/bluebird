@@ -572,7 +572,7 @@ U 5E7AD77B
 F0 "key_matrix" 50
 F1 "key_matrix.sch" 50
 $EndSheet
-Text GLabel 9400 1500 2    50   Input ~ 0
+Text GLabel 9400 1800 2    50   Input ~ 0
 row1
 Wire Wire Line
 	9300 1400 9400 1400
@@ -593,13 +593,13 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 8150 3800 
 	1    7950 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 9400 1600 2    50   Input ~ 0
-row2
 Text GLabel 9400 1700 2    50   Input ~ 0
+row2
+Text GLabel 9400 1600 2    50   Input ~ 0
 row3
-Text GLabel 9400 1800 2    50   Input ~ 0
+Text GLabel 9400 1500 2    50   Input ~ 0
 row4
-Text GLabel 9400 1900 2    50   Input ~ 0
+Text GLabel 9400 1400 2    50   Input ~ 0
 row5
 Wire Wire Line
 	9300 1800 9400 1800
@@ -802,7 +802,7 @@ Wire Wire Line
 	7150 5600 7150 5700
 Wire Wire Line
 	7050 5600 7150 5600
-Text GLabel 9400 1400 2    50   Input ~ 0
+Text GLabel 9400 1900 2    50   Input ~ 0
 row0
 $Comp
 L Driver_LED:IS31FL3731-SA U3
@@ -1430,4 +1430,6 @@ Text GLabel 9400 2900 2    50   Input ~ 0
 VCC_BAT
 Wire Wire Line
 	9300 2900 9400 2900
+Text Notes 2050 6350 0    50   ~ 0
+4.7uF cap for UVCC
 $EndSCHEMATC
